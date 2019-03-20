@@ -1,0 +1,5 @@
+site_name: Python3 Editor Documentation
+theme: readthedocs
+docs_dir: 'doc'
+pages:
+    - 'Home': 'index.md'
