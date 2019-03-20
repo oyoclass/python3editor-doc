@@ -1,0 +1,79 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "What is Python3?\n\n\nQuote from Python official website:\n\n\n\n\nPython is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python\u2019s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.\n\n\n\n\nCurrently Python has two versions: Python2 and Python3. Python3 is the new version of Python. Quote from wikipedia:\n\n\n\n\nPython 3.0 (also called \"Python 3000\" or \"Py3K\") was released on December 3, 2008. It was designed to rectify fundamental design flaws in the language\u2014the changes required could not be implemented while retaining full backwards compatibility with the 2.x series, which necessitated a new major version number. The guiding principle of Python 3 was: \"reduce feature duplication by removing old ways of doing things\".\n\n\n\n\nPython2 won't be maintained after January 1, 2020. If you are new to programming, you should learn Python3 instead of Python2. However, if you are already familiar with Python2, learning Python3 will be also very easy to you.\n\n\nAbout OYOclass' Python3 Editor\n\n\nPython3 Editor is an application built into the OYOclass platform which can be used to write Python3 code. OYOclass' Python3 Editor uses Python version 3.6 behind the scene. You can use any standard Python3 libraries in Python3 Editor, except the \nTurtle\n and \ntkinter\n graphic libraries. If you want to use the \nTurtle\n library with Python, check the \"Python Mini\" app on OYOclass platform.\n\n\nThe following links from Python's official website can help you get started.\n\n\n\n\nThe Python Tutorial\n\n\nThe Python Language Reference\n\n\nThe Python Standard Library\n\n\n\n\nQuick Start\n\n\nCopy following example code to OYOclass' Python3 Editor then click the \"Run\" button:\n\n\nPrint\n\n\nprint(\nHello World\n)\nprint(123)\nprint(1 + 2)\nprint(1 + 2 * 3)\n\n\n\n\nUser Input\n\n\nname = input(\nWhat's your name?\\n\n)\nage = input(\nHow old are you?\\n\n)\nprint(f\nHello {name}, you are {age} years old\n)\n\n\n\n\nLoop\n\n\nfor i in range(1, 6):\n    print(\n* \n * i)\n\n\n\n\nCall Web API\n\n\nfrom urllib.request import urlopen\nimport json\n\nreq = urlopen(\nhttps://aws.random.cat/meow\n)\ndata = json.loads(req.read())\nprint(f\nOpen the URL below, you will see a cat: \\n{data['file']}\n)\n\n\n\n\nMoving from Python2 to Python3\n\n\nSince Python3 broke backward compatibility, and much Python2 code does not run unmodified on Python3. If you are already familiar with Python2, the notes below can help you quickly start coding in Python3.\n\n\nStrings\n\n\nPython3 strings are Unicode, the \nunicode()\n function is gone.\n\n\nIn Python2:\n\n\ns = unicode(x)\n\n\n\n\nIn Python3:\n\n\ns = str(x)\n\n\n\n\nAlso, the string % operator is deprecated; use \nformat()\n or \nf\n:\n\n\nIn Python2:\n\n\ni = 1\ns = \nabc\n\nmystr = \n%d %s\n % (i, s)\n\n\n\n\nIn Python3:\n\n\ni = 1\ns = \nabc\n\nmystr = \n{} {}\n.format(i, s)\n# or\nmystr = f\n{i} {s}\n\n\n\n\n\nPrint\n\n\nIn Python2:\n\n\nprint \na\n, \nb\n, \nc\n\n\n\n\n\nIn Python3:\n\n\nprint(\na\n, \nb\n, \nc\n)\n\n\n\n\nNumbers\n\n\nIn Python2:\n\n\nx = 5 / 2.0 # x = 2.5\nx = 5 / 2 # x = 2\n\n\n\n\nIn Python3:\n\n\nx = 5 / 2 # x = 2.5\nx = 5 // 2 # x = 2\n\n\n\n\nExceptions\n\n\nCatching exception objects requires the \nas\n keyword.\n\n\nIn Python2:\n\n\ntry:\n    process()\nexcept Exception, ex:\n    print ex\n\n\n\n\nIn Python3:\n\n\ntry:\n    process()\nexcept Exception as ex:\n    print(ex)\n\n\n\n\nRenamed modules\n\n\n\n\nPython2 \nimport SimpleHTTPServer\n ; Python3 \nimport http.server\n\n\nPython2 \nimport ConfigParser\n ; Python3 \nimport configparser\n\n\nPython2 \nimport SocketServer\n ; Python3 \nimport socketserver\n\n\nPython2 \nimport Tkinter\n ; Python3 \nimport tkinter\n\n\nPython2 \nimport urllib\n ; Python3 \nimport urllib.request, urllib.parse, urllib.error\n\n\nPython2 \nimport urllib2\n ; Python3 \nimport ullib.request, urllib.error\n\n\nPython2 \nimport urlparse\n ; Python3 \nimport urllib.parse\n\n\n\n\nPlease notice that above doesn't include all differences between Python2 and Python3. To master Python3, you still need to read Python3's official documentations.\n\n\nBeyond OYOclass' Python3 Editor\n\n\nIf you would like to do more with Python and go beyond the capabilities of OYOclass' Python3 Editor, please download and install the Python:\n\n\n\n\nDownload Python\n : The version you download from Python's website most likely \n= 3.7, although OYOclass' Python3 Editor uses Python3.6 behind the scene, there are not many differences with Python 3.7.\n\n\nPython3 Official Documentation\n\n\nAutomated Python 2 to 3 code translation\n\n\nSix Library\n : Six is a Python 2 and 3 compatibility library. It provides utility functions for smoothing over the differences between the Python versions with the goal of writing Python code that is compatible on both Python versions. See the documentation for more information on what is provided.\n\n\nResources in Awesome Python Repository", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#what-is-python3", 
+            "text": "Quote from Python official website:   Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python\u2019s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.   Currently Python has two versions: Python2 and Python3. Python3 is the new version of Python. Quote from wikipedia:   Python 3.0 (also called \"Python 3000\" or \"Py3K\") was released on December 3, 2008. It was designed to rectify fundamental design flaws in the language\u2014the changes required could not be implemented while retaining full backwards compatibility with the 2.x series, which necessitated a new major version number. The guiding principle of Python 3 was: \"reduce feature duplication by removing old ways of doing things\".   Python2 won't be maintained after January 1, 2020. If you are new to programming, you should learn Python3 instead of Python2. However, if you are already familiar with Python2, learning Python3 will be also very easy to you.", 
+            "title": "What is Python3?"
+        }, 
+        {
+            "location": "/#about-oyoclass-python3-editor", 
+            "text": "Python3 Editor is an application built into the OYOclass platform which can be used to write Python3 code. OYOclass' Python3 Editor uses Python version 3.6 behind the scene. You can use any standard Python3 libraries in Python3 Editor, except the  Turtle  and  tkinter  graphic libraries. If you want to use the  Turtle  library with Python, check the \"Python Mini\" app on OYOclass platform.  The following links from Python's official website can help you get started.   The Python Tutorial  The Python Language Reference  The Python Standard Library", 
+            "title": "About OYOclass' Python3 Editor"
+        }, 
+        {
+            "location": "/#quick-start", 
+            "text": "Copy following example code to OYOclass' Python3 Editor then click the \"Run\" button:", 
+            "title": "Quick Start"
+        }, 
+        {
+            "location": "/#print", 
+            "text": "print( Hello World )\nprint(123)\nprint(1 + 2)\nprint(1 + 2 * 3)", 
+            "title": "Print"
+        }, 
+        {
+            "location": "/#user-input", 
+            "text": "name = input( What's your name?\\n )\nage = input( How old are you?\\n )\nprint(f Hello {name}, you are {age} years old )", 
+            "title": "User Input"
+        }, 
+        {
+            "location": "/#loop", 
+            "text": "for i in range(1, 6):\n    print( *   * i)", 
+            "title": "Loop"
+        }, 
+        {
+            "location": "/#call-web-api", 
+            "text": "from urllib.request import urlopen\nimport json\n\nreq = urlopen( https://aws.random.cat/meow )\ndata = json.loads(req.read())\nprint(f Open the URL below, you will see a cat: \\n{data['file']} )", 
+            "title": "Call Web API"
+        }, 
+        {
+            "location": "/#moving-from-python2-to-python3", 
+            "text": "Since Python3 broke backward compatibility, and much Python2 code does not run unmodified on Python3. If you are already familiar with Python2, the notes below can help you quickly start coding in Python3.", 
+            "title": "Moving from Python2 to Python3"
+        }, 
+        {
+            "location": "/#strings", 
+            "text": "Python3 strings are Unicode, the  unicode()  function is gone.  In Python2:  s = unicode(x)  In Python3:  s = str(x)  Also, the string % operator is deprecated; use  format()  or  f :  In Python2:  i = 1\ns =  abc \nmystr =  %d %s  % (i, s)  In Python3:  i = 1\ns =  abc \nmystr =  {} {} .format(i, s)\n# or\nmystr = f {i} {s}", 
+            "title": "Strings"
+        }, 
+        {
+            "location": "/#print_1", 
+            "text": "In Python2:  print  a ,  b ,  c   In Python3:  print( a ,  b ,  c )", 
+            "title": "Print"
+        }, 
+        {
+            "location": "/#numbers", 
+            "text": "In Python2:  x = 5 / 2.0 # x = 2.5\nx = 5 / 2 # x = 2  In Python3:  x = 5 / 2 # x = 2.5\nx = 5 // 2 # x = 2", 
+            "title": "Numbers"
+        }, 
+        {
+            "location": "/#exceptions", 
+            "text": "Catching exception objects requires the  as  keyword.  In Python2:  try:\n    process()\nexcept Exception, ex:\n    print ex  In Python3:  try:\n    process()\nexcept Exception as ex:\n    print(ex)", 
+            "title": "Exceptions"
+        }, 
+        {
+            "location": "/#renamed-modules", 
+            "text": "Python2  import SimpleHTTPServer  ; Python3  import http.server  Python2  import ConfigParser  ; Python3  import configparser  Python2  import SocketServer  ; Python3  import socketserver  Python2  import Tkinter  ; Python3  import tkinter  Python2  import urllib  ; Python3  import urllib.request, urllib.parse, urllib.error  Python2  import urllib2  ; Python3  import ullib.request, urllib.error  Python2  import urlparse  ; Python3  import urllib.parse   Please notice that above doesn't include all differences between Python2 and Python3. To master Python3, you still need to read Python3's official documentations.", 
+            "title": "Renamed modules"
+        }, 
+        {
+            "location": "/#beyond-oyoclass-python3-editor", 
+            "text": "If you would like to do more with Python and go beyond the capabilities of OYOclass' Python3 Editor, please download and install the Python:   Download Python  : The version you download from Python's website most likely  = 3.7, although OYOclass' Python3 Editor uses Python3.6 behind the scene, there are not many differences with Python 3.7.  Python3 Official Documentation  Automated Python 2 to 3 code translation  Six Library  : Six is a Python 2 and 3 compatibility library. It provides utility functions for smoothing over the differences between the Python versions with the goal of writing Python code that is compatible on both Python versions. See the documentation for more information on what is provided.  Resources in Awesome Python Repository", 
+            "title": "Beyond OYOclass' Python3 Editor"
+        }
+    ]
+}
