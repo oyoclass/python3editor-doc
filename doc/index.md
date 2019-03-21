@@ -13,7 +13,7 @@ Python2 won't be maintained after January 1, 2020. If you are new to programming
 
 ## About OYOclass' Python3 Editor
 
-Python3 Editor is an application built into the OYOclass platform which can be used to write Python3 code. OYOclass' Python3 Editor uses Python version 3.6 behind the scene. You can use any standard Python3 libraries in Python3 Editor, except the `Turtle` and `tkinter` graphic libraries. If you want to use the `Turtle` library with Python, check the "Python Mini" app on OYOclass platform.
+Python3 Editor is an application built into the OYOclass platform which can be used to write Python3 code. OYOclass' Python3 Editor uses Python version 3.6 behind the scene. You can use any standard Python3.6 libraries in Python3 Editor, except the `Turtle` and `tkinter` graphic libraries. If you want to use the `Turtle` library with Python, check the "Python Mini" app on OYOclass platform.
 
 The following links from Python's official website can help you get started.
 
