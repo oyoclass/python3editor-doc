@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Set - Python3 Editor Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Set";
+    var mkdocs_page_input_path = "core/set.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Python3 Editor Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Core</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../comments/">Comments</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../boolean/">Boolean</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../number/">Number</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../comparison/">Comparison</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../none/">None</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../string/">String</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../function/">Function</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../listtuple/">List & Tuple</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Set</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#set">Set</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#empty-sets">Empty Sets</a></li>
+        
+            <li><a class="toctree-l4" href="#functions">Functions</a></li>
+        
+            <li><a class="toctree-l4" href="#example">Example</a></li>
+        
+            <li><a class="toctree-l4" href="#reference">Reference</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../dictionary/">Dictionary</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../inputoutput/">Standard Input & Output</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Standard Python Libraries</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../modules/">Intro</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../modules/math/">math</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../modules/random/">random</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../modules/string/">string</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../modules/time/">time</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Python3 Editor Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Core &raquo;</li>
+        
+      
+    
+    <li>Set</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="set">Set</h2>
+<p>A set is an unordered collection with no duplicate elements. Basic uses of sets include membership testing and eliminating duplicate entries. Set objects also support mathematical operations like union, intersection, difference, and symmetric difference.</p>
+<p>You can use the <code>set()</code> function to make a set. Here is a quick example:</p>
+<pre><code class="python">basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
+fruit = set(basket)
+print(fruit)     # {'apple', 'orange', 'pear', 'banana'}
+</code></pre>
+
+<h3 id="empty-sets">Empty Sets</h3>
+<p>Sets in Python3 are enclosed in curly braces (<code>{}</code>). However, in order to create an empty set, you would not use a set of empty curly braces (<code>{}</code>). To create an empty set, you would use the <code>set()</code> function with no parameters.</p>
+<pre><code class="python">var1 = set()
+var2 = {}
+print(type(var1))   #&lt;class 'set'&gt;
+print(type(var2))   #&lt;class 'dict'&gt;
+</code></pre>
+
+<h3 id="functions">Functions</h3>
+<ul>
+<li><code>set.add(elem)</code> : Adds element <em>elem</em> to the set.</li>
+<li><code>set.copy()</code> : Returns a new set that is shallow copy of <em>set</em>.</li>
+<li><code>set.difference(*others)</code> : Returns a new set with elements that are in the set that are not in the <em>others</em>.<ul>
+<li><code>set - other</code>: Functions the same as <code>set.difference(other)</code> .</li>
+</ul>
+</li>
+<li><code>set.difference_update(*others)</code> : Updates the set, removing elements found in others.</li>
+<li><code>set.discard(elem)</code> : Removes element <em>elem</em> from the set if it is present.</li>
+<li><code>set.intersection(others)</code> : Returns a new set with elements common to the set and all <em>others</em>.</li>
+<li><code>set.intersection_update(others)</code>: Updates the set, keeping only elements found in it and all <em>others</em>.</li>
+<li><code>set.isdisjoint(other)</code> : Returns True if the set has no elements in common with other. Sets are disjoint if and only if their intersection is the empty set.</li>
+<li><code>set.issubset(other)</code> : Test whether every element in the set is in <em>other</em>.<ul>
+<li><code>set &lt;= other</code>: Test whether every element is in <em>other</em>.</li>
+<li><code>set &lt; other</code>: Test whether the set is a proper subset of <em>other</em>(<code>set &lt;= other</code> and <code>set != other</code>).</li>
+</ul>
+</li>
+<li><code>set.issuperset(other)</code> : Test whether every element in <em>other</em> is in the set.<ul>
+<li><code>set &gt;= other</code>: Test whether every element in <em>other</em> is in the set.</li>
+<li><code>set &gt; other</code>: Test whether the set is a proper superset of <em>other</em>(<code>set &gt;= other</code> and <code>set != other</code>).</li>
+</ul>
+</li>
+<li><code>set.pop()</code> : Removes and returns an arbitrary element from the set.</li>
+<li><code>set.remove(elem)</code> : Remove element <em>elem</em> from the set.  </li>
+<li><code>set.symmetric_difference(other)</code> : Returns a new set with elements in either the set or <em>other</em> but <strong>not both</strong>.<ul>
+<li><code>set ^ other</code>: Returns a set with elements in either the set or other but <strong>not both</strong>.</li>
+</ul>
+</li>
+<li><code>set.symmetric_difference_update(other)</code> : Updates the set, keeping only elements found in either set, but <strong>not in both</strong>.</li>
+<li><code>set.union(others)</code> : Returns a new set with elements from the set and all <em>others</em>.<ul>
+<li><code>set | other</code>: Returns a new set with elements from the set and <em>other</em>.</li>
+</ul>
+</li>
+<li><code>set.update(*others)</code> : Updates the set, adding elements from all <em>others</em>.</li>
+</ul>
+<h3 id="example">Example</h3>
+<pre><code class="python">a = set()
+a.add(1)
+a.add(2)
+a.add(1)
+
+print(a)                 # {1, 2}
+print(len(a))            # 2
+
+b = set([2,2,3])
+print(b)                 # {2, 3}
+
+print(a.intersection(b)) # {2}
+
+c = set([3])
+print(b.issuperset(c))   # True
+
+print(a ^ b)             # {1, 3}
+print(a &gt;= b)            # False
+print(c &lt;= c)            # True
+print(c &lt; c)             # False
+print(a.union(b))        # {1, 2, 3}
+</code></pre>
+
+<h3 id="reference">Reference</h3>
+<ul>
+<li><a href="https://docs.python.org/3/tutorial/datastructures.html#sets">Sets</a> as a <strong>Data Structure</strong> on <em>docs.python.org</em>.</li>
+<li><a href="https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset">Set</a> as a <strong>Built-in Type</strong> on <em>docs.python.org</em>. </li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../dictionary/" class="btn btn-neutral float-right" title="Dictionary">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../listtuple/" class="btn btn-neutral" title="List & Tuple"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../listtuple/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../dictionary/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

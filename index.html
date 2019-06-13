@@ -7,24 +7,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="None">
   
-  <link rel="shortcut icon" href="./img/favicon.ico">
+  <link rel="shortcut icon" href="img/favicon.ico">
   <title>Home - Python3 Editor Documentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="./css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="./css/highlight.css">
+  <link rel="stylesheet" href="css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
   
   <script>
     // Current page data
     var mkdocs_page_name = "Home";
     var mkdocs_page_input_path = "index.md";
-    var mkdocs_page_url = "/";
+    var mkdocs_page_url = null;
   </script>
   
-  <script src="./js/jquery-2.1.1.min.js"></script>
-  <script src="./js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="./js/highlight.pack.js"></script> 
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
   
 </head>
 
@@ -38,7 +39,7 @@
         <a href="." class="icon icon-home"> Python3 Editor Documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -60,39 +61,88 @@
 
     <li class="toctree-l2"><a href="#quick-start">Quick Start</a></li>
     
-        <ul>
-        
-            <li><a class="toctree-l3" href="#print">Print</a></li>
-        
-            <li><a class="toctree-l3" href="#user-input">User Input</a></li>
-        
-            <li><a class="toctree-l3" href="#loop">Loop</a></li>
-        
-            <li><a class="toctree-l3" href="#call-web-api">Call Web API</a></li>
-        
-        </ul>
-    
-
-    <li class="toctree-l2"><a href="#moving-from-python2-to-python3">Moving from Python2 to Python3</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l3" href="#strings">Strings</a></li>
-        
-            <li><a class="toctree-l3" href="#print_1">Print</a></li>
-        
-            <li><a class="toctree-l3" href="#numbers">Numbers</a></li>
-        
-            <li><a class="toctree-l3" href="#exceptions">Exceptions</a></li>
-        
-            <li><a class="toctree-l3" href="#renamed-modules">Renamed modules</a></li>
-        
-        </ul>
-    
 
     <li class="toctree-l2"><a href="#beyond-oyoclass-python3-editor">Beyond OYOclass' Python3 Editor</a></li>
     
 
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Core</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="core/comments/">Comments</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="core/boolean/">Boolean</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="core/number/">Number</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="core/comparison/">Comparison</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="core/none/">None</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="core/string/">String</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="core/function/">Function</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="core/listtuple/">List & Tuple</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="core/set/">Set</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="core/dictionary/">Dictionary</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="core/inputoutput/">Standard Input & Output</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Standard Python Libraries</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="modules/">Intro</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="modules/math/">math</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="modules/random/">random</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="modules/string/">string</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="modules/time/">time</a>
+                </li>
     </ul>
 	    </li>
           
@@ -129,7 +179,7 @@
             <div class="section">
               
                 <h2 id="what-is-python3">What is Python3?</h2>
-<p>Quote from Python official website:</p>
+<p>Quote from Python's official website:</p>
 <blockquote>
 <p>Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.</p>
 </blockquote>
@@ -137,9 +187,9 @@
 <blockquote>
 <p>Python 3.0 (also called "Python 3000" or "Py3K") was released on December 3, 2008. It was designed to rectify fundamental design flaws in the language—the changes required could not be implemented while retaining full backwards compatibility with the 2.x series, which necessitated a new major version number. The guiding principle of Python 3 was: "reduce feature duplication by removing old ways of doing things".</p>
 </blockquote>
-<p>Python2 won't be maintained after January 1, 2020. If you are new to programming, you should learn Python3 instead of Python2. However, if you are already familiar with Python2, learning Python3 will be also very easy to you.</p>
+<p>Python2 won't be maintained after January 1, 2020. If you are new to programming, you should learn Python3 instead of Python2. However, if you are already familiar with Python2, learning Python3 will be very easy for you.</p>
 <h2 id="about-oyoclass-python3-editor">About OYOclass' Python3 Editor</h2>
-<p>Python3 Editor is an application built into the OYOclass platform which can be used to write Python3 code. OYOclass' Python3 Editor uses Python version 3.6 behind the scene. You can use any standard Python3.6 libraries in Python3 Editor, except the <code>Turtle</code> and <code>tkinter</code> graphic libraries. If you want to use the <code>Turtle</code> library with Python, check the "Python Mini" app on OYOclass platform.</p>
+<p>The Python3 Editor is an application built into the OYOclass platform, which can be used to write Python3 code. OYOclass' Python3 Editor uses Python version 3.6 behind the scenes. You can use any of the standard Python3 libraries in Python3 Editor, except the <code>Turtle</code> and <code>tkinter</code> graphic libraries. If you want to use the <code>Turtle</code> library with Python, check out the <strong>Python Mini</strong> app on OYOclass platform.</p>
 <p>The following links from Python's official website can help you get started.</p>
 <ul>
 <li><a href="https://docs.python.org/3.6/tutorial/index.html">The Python Tutorial</a></li>
@@ -147,26 +197,26 @@
 <li><a href="https://docs.python.org/3.6/library/index.html">The Python Standard Library</a></li>
 </ul>
 <h2 id="quick-start">Quick Start</h2>
-<p>Copy following example code to OYOclass' Python3 Editor then click the "Run" button:</p>
-<h4 id="print">Print</h4>
+<p>Copy the following code samples to OYOclass' Python3 Editor. Then, click the "Run" button.</p>
+<p><strong>Print</strong></p>
 <pre><code class="python">print(&quot;Hello World&quot;)
 print(123)
 print(1 + 2)
 print(1 + 2 * 3)
 </code></pre>
 
-<h4 id="user-input">User Input</h4>
+<p><strong>User Input</strong></p>
 <pre><code class="python">name = input(&quot;What's your name?\n&quot;)
 age = input(&quot;How old are you?\n&quot;)
 print(f&quot;Hello {name}, you are {age} years old&quot;)
 </code></pre>
 
-<h4 id="loop">Loop</h4>
+<p><strong>Loop</strong></p>
 <pre><code class="python">for i in range(1, 6):
     print(&quot;* &quot; * i)
 </code></pre>
 
-<h4 id="call-web-api">Call Web API</h4>
+<p><strong>Call Web API</strong></p>
 <pre><code class="python">from urllib.request import urlopen
 import json
 
@@ -175,93 +225,36 @@ data = json.loads(req.read())
 print(f&quot;Open the URL below, you will see a cat: \n{data['file']}&quot;)
 </code></pre>
 
-<h2 id="moving-from-python2-to-python3">Moving from Python2 to Python3</h2>
-<p>Since Python3 broke backward compatibility, and much Python2 code does not run unmodified on Python3. If you are already familiar with Python2, the notes below can help you quickly start coding in Python3.</p>
-<h4 id="strings">Strings</h4>
-<p>Python3 strings are Unicode, the <code>unicode()</code> function is gone.</p>
-<p>In Python2:</p>
-<pre><code class="python">s = unicode(x)
-</code></pre>
-
-<p>In Python3:</p>
-<pre><code class="python">s = str(x)
-</code></pre>
-
-<p>Also, the string % operator is deprecated; use <code>format()</code> or <code>f</code>:</p>
-<p>In Python2:</p>
-<pre><code class="python">i = 1
-s = &quot;abc&quot;
-mystr = &quot;%d %s&quot; % (i, s)
-</code></pre>
-
-<p>In Python3:</p>
-<pre><code class="python">i = 1
-s = &quot;abc&quot;
-mystr = &quot;{} {}&quot;.format(i, s)
-# or
-mystr = f&quot;{i} {s}&quot;
-</code></pre>
-
-<h4 id="print_1">Print</h4>
-<p>In Python2:</p>
-<pre><code class="python">print &quot;a&quot;, &quot;b&quot;, &quot;c&quot;
-</code></pre>
-
-<p>In Python3:</p>
-<pre><code class="python">print(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;)
-</code></pre>
-
-<h4 id="numbers">Numbers</h4>
-<p>In Python2:</p>
-<pre><code class="python">x = 5 / 2.0 # x = 2.5
-x = 5 / 2 # x = 2
-</code></pre>
-
-<p>In Python3:</p>
-<pre><code class="python">x = 5 / 2 # x = 2.5
-x = 5 // 2 # x = 2
-</code></pre>
-
-<h4 id="exceptions">Exceptions</h4>
-<p>Catching exception objects requires the <code>as</code> keyword.</p>
-<p>In Python2:</p>
-<pre><code class="python">try:
-    process()
-except Exception, ex:
-    print ex
-</code></pre>
-
-<p>In Python3:</p>
-<pre><code class="python">try:
-    process()
-except Exception as ex:
-    print(ex)
-</code></pre>
-
-<h4 id="renamed-modules">Renamed modules</h4>
-<ul>
-<li>Python2 <code>import SimpleHTTPServer</code> ; Python3 <code>import http.server</code></li>
-<li>Python2 <code>import ConfigParser</code> ; Python3 <code>import configparser</code></li>
-<li>Python2 <code>import SocketServer</code> ; Python3 <code>import socketserver</code></li>
-<li>Python2 <code>import Tkinter</code> ; Python3 <code>import tkinter</code></li>
-<li>Python2 <code>import urllib</code> ; Python3 <code>import urllib.request, urllib.parse, urllib.error</code></li>
-<li>Python2 <code>import urllib2</code> ; Python3 <code>import ullib.request, urllib.error</code></li>
-<li>Python2 <code>import urlparse</code> ; Python3 <code>import urllib.parse</code></li>
-</ul>
-<p>Please notice that above doesn't include all differences between Python2 and Python3. To master Python3, you still need to read Python3's official documentations.</p>
 <h2 id="beyond-oyoclass-python3-editor">Beyond OYOclass' Python3 Editor</h2>
 <p>If you would like to do more with Python and go beyond the capabilities of OYOclass' Python3 Editor, please download and install the Python:</p>
 <ul>
-<li><a href="https://www.python.org/downloads/">Download Python</a> : The version you download from Python's website most likely &gt;= 3.7, although OYOclass' Python3 Editor uses Python3.6 behind the scene, there are not many differences with Python 3.7.</li>
-<li><a href="https://docs.python.org/3/">Python3 Official Documentation</a></li>
+<li><a href="https://www.python.org/downloads/">Download Python</a>: The version you download from Python's website is most likely greater than or equal to version 3.7. Although OYOclass' Python3 Editor uses Pythonv3.6 behind the scenes, there are not many differences between Python 3.6 and Python 3.7.</li>
+<li><a href="https://docs.python.org/3/">Python3's Official Documentation</a></li>
 <li><a href="https://docs.python.org/3/library/2to3.html">Automated Python 2 to 3 code translation</a></li>
-<li><a href="https://pypi.org/project/six/">Six Library</a> : Six is a Python 2 and 3 compatibility library. It provides utility functions for smoothing over the differences between the Python versions with the goal of writing Python code that is compatible on both Python versions. See the documentation for more information on what is provided.</li>
-<li><a href="https://github.com/vinta/awesome-python">Resources in Awesome Python Repository</a></li>
+<li><a href="https://pypi.org/project/six/">Six Library</a>: Six is a Python 2 and 3 compatibility library. It provides utility functions to smooth over the differences between the Python versions. The goal is to write Python code that is compatible in both Python versions. See the documentation for more information on what is provided.</li>
+<li><a href="https://github.com/vinta/awesome-python">Resources in Awesome Python's Repository</a></li>
+</ul>
+<p><strong> Renamed modules</strong></p>
+<ul>
+<li>Python2 <code>import SimpleHTTPServer</code> to Python3 <code>import http.server</code></li>
+<li>Python2 <code>import ConfigParser</code>     to Python3 <code>import configparser</code></li>
+<li>Python2 <code>import SocketServer</code>     to Python3 <code>import socketserver</code></li>
+<li>Python2 <code>import Tkinter</code>          to Python3 <code>import tkinter</code></li>
+<li>Python2 <code>import urllib</code>           to Python3 <code>import urllib.request, urllib.parse, urllib.error</code></li>
+<li>Python2 <code>import urllib2</code>          to Python3 <code>import ullib.request, urllib.error</code></li>
+<li>Python2 <code>import urlparse</code>         to Python3 <code>import urllib.parse</code></li>
 </ul>
               
             </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="core/comments/" class="btn btn-neutral float-right" title="Comments">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+    </div>
   
 
   <hr/>
@@ -273,12 +266,12 @@ except Exception as ex:
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-	  
+      
         </div>
       </div>
 
     </section>
-    
+
   </div>
 
   <div class="rst-versions" role="note" style="cursor: pointer">
@@ -286,14 +279,18 @@ except Exception as ex:
       
       
       
+        <span style="margin-left: 15px"><a href="core/comments/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
     </span>
 </div>
-    <script src="./js/theme.js"></script>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
 
 </body>
 </html>
 
 <!--
-MkDocs version : 0.16.3
-Build Date UTC : 2019-03-21 16:30:41
+MkDocs version : 1.0.4
+Build Date UTC : 2019-06-13 15:25:18
 -->
