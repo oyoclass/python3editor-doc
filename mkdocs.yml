@@ -1,7 +1,7 @@
 site_name: Python3 Editor Documentation
 theme: readthedocs
 docs_dir: 'doc'
-pages:
+nav:
     - 'Home': 'index.md'
     - 'Core':
         - 'Comments': 'core/comments.md'
@@ -15,3 +15,8 @@ pages:
         - 'Set': 'core/set.md'
         - 'Dictionary': 'core/dictionary.md'
         - 'Standard Input & Output': 'core/inputoutput.md'
+    - 'Standard Python Modules':
+        - 'math': 'modules/math.md'
+        - 'random': 'modules/random.md'
+        - 'string': 'modules/string.md'
+        - 'time': 'modules/time.md'

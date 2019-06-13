@@ -11,13 +11,13 @@ The following values are considered *False*: None, False, 0, 0.0, 0j, '', (), []
 
 ### Convert Value to Boolean
 
-* `bool(x)` : convert x to True or False
+* `bool(x)` : Convert x to *True* or *False*
 
 ### Logical Operations
 
-* `and` : x and y. This means that if x if false then x, else y
-* `or` : x or y. This means that if x is false, then y, else x
-* `not` : not x. Thsi means that if x is false, then True, else False
+* `and` : x and y. This means that *if x is False, then x, else y*
+* `or` : x or y. This means that *if x is False, then y, else x*
+* `not` : not x. This means that *if x is False, then True, else False*
 
 ### Example
 
@@ -36,4 +36,4 @@ print(bool(3))           # True
 
 ### Reference
 
-* Standard Types at [docs.python.org](https://docs.python.org/3.7/library/stdtypes.html)
+* [Standard Types](https://docs.python.org/3/library/stdtypes.html) at *docs.python.org*

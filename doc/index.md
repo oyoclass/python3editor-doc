@@ -8,12 +8,12 @@ Currently Python has two versions: Python2 and Python3. Python3 is the new versi
 
 > Python 3.0 (also called "Python 3000" or "Py3K") was released on December 3, 2008. It was designed to rectify fundamental design flaws in the language—the changes required could not be implemented while retaining full backwards compatibility with the 2.x series, which necessitated a new major version number. The guiding principle of Python 3 was: "reduce feature duplication by removing old ways of doing things".
 
-Python2 won't be maintained after January 1, 2020. If you are new to programming, you should learn Python3 instead of Python2. However, if you are already familiar with Python2, learning Python3 will be also very easy to you.
+Python2 won't be maintained after January 1, 2020. If you are new to programming, you should learn Python3 instead of Python2. However, if you are already familiar with Python2, learning Python3 will be very easy for you.
 
 
 ## About OYOclass' Python3 Editor
 
-Python3 Editor is an application built into the OYOclass platform, which can be used to write Python3 code. OYOclass' Python3 Editor uses Python version 3.6 behind the scenes. You can use any of the standard Python3 libraries in Python3 Editor, except the `Turtle` and `tkinter` graphic libraries. If you want to use the `Turtle` library with Python, check out the "Python Mini" app on OYOclass platform.
+The Python3 Editor is an application built into the OYOclass platform, which can be used to write Python3 code. OYOclass' Python3 Editor uses Python version 3.6 behind the scenes. You can use any of the standard Python3 libraries in Python3 Editor, except the `Turtle` and `tkinter` graphic libraries. If you want to use the `Turtle` library with Python, check out the **Python Mini** app on OYOclass platform.
 
 The following links from Python's official website can help you get started.
 
@@ -24,7 +24,7 @@ The following links from Python's official website can help you get started.
 
 ## Quick Start
 
-Copy following code samples to OYOclass' Python3 Editor, and then click the "Run" button:
+Copy the following code samples to OYOclass' Python3 Editor. Then, click the "Run" button.
 
 **Print**
 
@@ -60,17 +60,16 @@ req = urlopen("https://aws.random.cat/meow")
 data = json.loads(req.read())
 print(f"Open the URL below, you will see a cat: \n{data['file']}")
 ```
-Please notice that above doesn't include all differences between Python2 and Python3. To master Python3, you still need to read Python3's official documentations.
 
 ## Beyond OYOclass' Python3 Editor
-
+  
 If you would like to do more with Python and go beyond the capabilities of OYOclass' Python3 Editor, please download and install the Python:
 
-* [Download Python](https://www.python.org/downloads/) : The version you download from Python's website is most likely greater than or equal to version 3.7. Although OYOclass' Python3 Editor uses Pythonv3.6 behind the scenes, there are not many differences between Python 3.6 and Python 3.7.
-* [Python3 Official Documentation](https://docs.python.org/3/)
+* [Download Python](https://www.python.org/downloads/): The version you download from Python's website is most likely greater than or equal to version 3.7. Although OYOclass' Python3 Editor uses Pythonv3.6 behind the scenes, there are not many differences between Python 3.6 and Python 3.7.
+* [Python3's Official Documentation](https://docs.python.org/3/)
 * [Automated Python 2 to 3 code translation](https://docs.python.org/3/library/2to3.html)
-* [Six Library](https://pypi.org/project/six/) : Six is a Python 2 and 3 compatibility library. It provides utility functions to smooth over the differences between the Python versions with the goal of writing Python code that is compatible on both Python versions. See the documentation for more information on what is provided.
-* [Resources in Awesome Python Repository](https://github.com/vinta/awesome-python)
+* [Six Library](https://pypi.org/project/six/): Six is a Python 2 and 3 compatibility library. It provides utility functions to smooth over the differences between the Python versions. The goal is to write Python code that is compatible in both Python versions. See the documentation for more information on what is provided.
+* [Resources in Awesome Python's Repository](https://github.com/vinta/awesome-python)
 
 ** Renamed modules**
 
