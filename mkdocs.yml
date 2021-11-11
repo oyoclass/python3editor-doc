@@ -21,3 +21,4 @@ nav:
         - 'random': 'modules/random.md'
         - 'string': 'modules/string.md'
         - 'time': 'modules/time.md'
+        - 'urllib': 'modules/urllib.md'
