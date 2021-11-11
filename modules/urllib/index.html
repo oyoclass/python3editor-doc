@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>urllib - Python3 Editor Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "urllib";
+    var mkdocs_page_input_path = "modules/urllib.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Python3 Editor Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Core</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../core/comments/">Comments</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/boolean/">Boolean</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/number/">Number</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/comparison/">Comparison</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/none/">None</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/string/">String</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/function/">Function</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/listtuple/">List & Tuple</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/set/">Set</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/dictionary/">Dictionary</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/inputoutput/">Standard Input & Output</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Standard Python Libraries</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Intro</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../math/">math</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../random/">random</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../string/">string</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../time/">time</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">urllib</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#urllib-url-handling">urllib — URL handling</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#urllibrequest">urllib.request</a></li>
+        
+            <li><a class="toctree-l4" href="#urllibparse">urllib.parse</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Python3 Editor Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Standard Python Libraries &raquo;</li>
+        
+      
+    
+    <li>urllib</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="urllib-url-handling">urllib — URL handling</h2>
+<p>This module has several sub-modules that working with URLs, you can check the sub-modules in <a href="https://docs.python.org/3.6/library/urllib.html">Python's standard documentation</a>.</p>
+<p>We will show some examples for the mostly common used submodules <code>urllib.request</code> and <code>urllib.parse</code>.</p>
+<h3 id="urllibrequest">urllib.request</h3>
+<p>One of the common usage of this module is fetching data from the internet.</p>
+<h4 id="example-1-get-a-webpages-source-code">Example 1) Get a webpage's source code:</h4>
+<pre><code class="python">from urllib.request import urlopen
+
+source_code = urlopen(&quot;http://sabrinaw.oyosite.com&quot;).read().decode(&quot;utf-8&quot;)
+print(source_code)
+</code></pre>
+
+<p>This will print the source code string from website "sabrinaw.oyosite.com"</p>
+<blockquote>
+<p>Notice: If you are using the code above to get the source code from other website, it is not uncommon that you get some "forbidden" error instead of the actual source code. The reason is that some websites have restrictions for fetching their code, for example, they check if you are an actual browser or spider robot, and will return empty string or some fobidden error if they think you are a robot.</p>
+</blockquote>
+<h4 id="example-2-get-csv-data-and-parse-it-with-the-csv-lib">Example 2) Get CSV data and parse it with the CSV lib</h4>
+<p>A comma-separated values (CSV) file is a delimited text file that uses a comma to separate values. Each line of the file is a data record. Each record consists of one or more fields, separated by commas. <a href="https://en.wikipedia.org/wiki/Comma-separated_values">Read more on wiki &gt;&gt;</a>.</p>
+<p>Suppose we have a CSV file for Code Conquest Hackthon:</p>
+<pre><code class="csv">Name, Nickname, Age, Kingdom, Soldier Type, Rank
+Reuben,The Hammer,59,Prubadour,Lancer,Sergeant
+Everitt,The Whisper,27,Prubadour,Pikeman,Major
+Reinhardt,The Mammoth,56,Prubadour,Healer,Private
+Mel,The Hawk,53,Truisian,Pikeman,Sergeant
+</code></pre>
+
+<p>We can upload this file to our OYO website then read from the url. For example:</p>
+<pre><code>import urllib.request, csv
+
+page = urllib.request.urlopen(&quot;http://sabrinaw.oyosite.com/testing/data3.html&quot;)
+reader = csv.reader(
+    page.read().decode('utf-8').splitlines(),
+    skipinitialspace=True
+)
+
+for row in reader:
+    # row now is a python list
+    print(row)
+</code></pre>
+
+<h4 id="example-3-calling-api">Example 3) Calling API</h4>
+<p>Most APIs provide <a href="https://en.wikipedia.org/wiki/JSON">JSON</a> format data. Here we will a IP-to-Location API to get the location info from a IP.</p>
+<pre><code class="python">from urllib.request import urlopen
+import json
+
+ip = input(&quot;Input the IP you want to query: &quot;)
+url = f&quot;http://ip-api.com/json/{ip}&quot;
+location = json.loads(urlopen(url).read())
+print(&quot;Approx. Location:&quot;, location[&quot;city&quot;], location[&quot;region&quot;])
+</code></pre>
+
+<p>Run it (suppose we want to query the IP 67.84.146.84):</p>
+<pre><code>Input the IP you want to query: 67.84.146.84
+Approx. Location: Ronkonkoma NY
+</code></pre>
+
+<h4 id="use-oyoclass-proxy">Use OYOclass Proxy</h4>
+<p>Some schools may have firewalls that block domains in their allowlist. For example, if your school blocked access to the "ip-api.com" domain, you won't get the returned data like above. In such case, you can use our proxy: just simply prepend <code>https://proxy.oyoclass.com/</code> to any URL that you want to fetch data from.</p>
+<pre><code>from urllib.request import urlopen
+import json
+
+ip = input(&quot;Input the IP you want to query: &quot;)
+url = f&quot;https://proxy.oyoclass.com/http://ip-api.com/json/{ip}&quot;
+location = json.loads(urlopen(url).read())
+print(&quot;Approx. Location:&quot;, location[&quot;city&quot;], location[&quot;region&quot;])
+</code></pre>
+
+<p>Another example, here is an API you can call to get the bitcoin price in USD: https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&amp;vs_currencies=usd, suppose your school blocked the "coingecho.com" domain, you can just prepend <code>https://proxy.oyoclass.com/</code> to it:</p>
+<pre><code>from urllib.request import urlopen
+import json
+url = &quot;https://proxy.oyoclass.com/https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&amp;vs_currencies=usd&quot;
+data = json.loads(urlopen(url).read())
+print(data)
+</code></pre>
+
+<p>Run it:</p>
+<pre><code>{'bitcoin': {'usd': 65274}}
+</code></pre>
+
+<h3 id="urllibparse">urllib.parse</h3>
+<p>This submodule can help parse a URL string and split it into different components. <a href="https://docs.python.org/3.6/library/urllib.parse.html#module-urllib.parse">Read more &gt;&gt;</a>.</p>
+<h4 id="example">Example</h4>
+<pre><code class="python">from urllib.parse import urlparse
+
+url = &quot;https://oyoclass.com/settings/account?name=python#anchor&quot;
+parsed = urlparse(url)
+print(parsed)
+print(parsed.scheme)
+print(parsed.netloc)
+print(parsed.path)
+print(parsed.query)
+print(parsed.fragment)
+</code></pre>
+
+<p>Run it:</p>
+<pre><code>ParseResult(scheme='https', netloc='oyoclass.com', path='/settings/account', params='', query='name=python', fragment='anchor')
+https
+oyoclass.com
+/settings/account
+name=python
+anchor
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../time/" class="btn btn-neutral" title="time"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../time/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
