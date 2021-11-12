@@ -186,24 +186,24 @@
             <div class="section">
               
                 <h2 id="urllib-url-handling">urllib — URL handling</h2>
-<p>This module has several sub-modules that working with URLs, you can check the sub-modules in <a href="https://docs.python.org/3.6/library/urllib.html">Python's standard documentation</a>.</p>
-<p>We will show some examples for the mostly common used submodules <code>urllib.request</code> and <code>urllib.parse</code>.</p>
+<p>This module has several sub-modules that works with URLs, and you can check out the sub-modules in <a href="https://docs.python.org/3.6/library/urllib.html">Python's standard documentation</a>.</p>
+<p>We will show some examples for the most commonly used submodules <code>urllib.request</code> and <code>urllib.parse</code>.</p>
 <h3 id="urllibrequest">urllib.request</h3>
-<p>One of the common usage of this module is fetching data from the internet.</p>
-<h4 id="example-1-get-a-webpages-source-code">Example 1) Get a webpage's source code:</h4>
+<p>A common usage of this module is fetching data from the internet.</p>
+<h4 id="example-1-get-a-webpages-source-code">Example 1) Get a webpage's source code</h4>
 <pre><code class="python">from urllib.request import urlopen
 
 source_code = urlopen(&quot;http://sabrinaw.oyosite.com&quot;).read().decode(&quot;utf-8&quot;)
 print(source_code)
 </code></pre>
 
-<p>This will print the source code string from website "sabrinaw.oyosite.com"</p>
+<p>This will print the source code as a string from the website "sabrinaw.oyosite.com".</p>
 <blockquote>
-<p>Notice: If you are using the code above to get the source code from other website, it is not uncommon that you get some "forbidden" error instead of the actual source code. The reason is that some websites have restrictions for fetching their code, for example, they check if you are an actual browser or spider robot, and will return empty string or some fobidden error if they think you are a robot.</p>
+<p><strong>Note</strong>: If you are using the code above to get the source code from a website, it is not uncommon that the function will return a "forbidden" error instead of the actual source code. The reason is that many websites have restrictions on who can fetch their code. For example, the website may check if you are an actual browser or a spider robot, and it will return an empty string or a "forbidden" error if they think you are a robot.</p>
 </blockquote>
 <h4 id="example-2-get-csv-data-and-parse-it-with-the-csv-lib">Example 2) Get CSV data and parse it with the CSV lib</h4>
-<p>A comma-separated values (CSV) file is a delimited text file that uses a comma to separate values. Each line of the file is a data record. Each record consists of one or more fields, separated by commas. <a href="https://en.wikipedia.org/wiki/Comma-separated_values">Read more on wiki &gt;&gt;</a>.</p>
-<p>Suppose we have a CSV file for Code Conquest Hackthon:</p>
+<p>A comma-separated values (CSV) file is a delimited text file that uses a comma to separate values. Each line of the file is a data record. Each record consists of one or more fields, separated by commas. <a href="https://en.wikipedia.org/wiki/Comma-separated_values">Read more on Wikipedia &gt;&gt;</a>.</p>
+<p>Suppose we have a CSV file for a Code Conquest Hackathon:</p>
 <pre><code class="csv">Name, Nickname, Age, Kingdom, Soldier Type, Rank
 Reuben,The Hammer,59,Prubadour,Lancer,Sergeant
 Everitt,The Whisper,27,Prubadour,Pikeman,Major
@@ -211,8 +211,8 @@ Reinhardt,The Mammoth,56,Prubadour,Healer,Private
 Mel,The Hawk,53,Truisian,Pikeman,Sergeant
 </code></pre>
 
-<p>We can upload this file to our OYO website then read from the url. For example:</p>
-<pre><code>import urllib.request, csv
+<p>We can upload this file to our OYO website, and then read from the url. For example:</p>
+<pre><code class="python">import urllib.request, csv
 
 page = urllib.request.urlopen(&quot;http://sabrinaw.oyosite.com/testing/data3.html&quot;)
 reader = csv.reader(
@@ -226,7 +226,7 @@ for row in reader:
 </code></pre>
 
 <h4 id="example-3-calling-api">Example 3) Calling API</h4>
-<p>Most APIs provide <a href="https://en.wikipedia.org/wiki/JSON">JSON</a> format data. Here we will a IP-to-Location API to get the location info from a IP.</p>
+<p>Most APIs provide <a href="https://en.wikipedia.org/wiki/JSON">JSON</a> format data. Here we will use an IP-to-Location API to get the location information from an IP address.</p>
 <pre><code class="python">from urllib.request import urlopen
 import json
 
@@ -237,13 +237,13 @@ print(&quot;Approx. Location:&quot;, location[&quot;city&quot;], location[&quot;
 </code></pre>
 
 <p>Run it (suppose we want to query the IP 67.84.146.84):</p>
-<pre><code>Input the IP you want to query: 67.84.146.84
+<pre><code class="markdown">Input the IP you want to query: 67.84.146.84
 Approx. Location: Ronkonkoma NY
 </code></pre>
 
 <h4 id="use-oyoclass-proxy">Use OYOclass Proxy</h4>
-<p>Some schools may have firewalls that block domains in their allowlist. For example, if your school blocked access to the "ip-api.com" domain, you won't get the returned data like above. In such case, you can use our proxy: just simply prepend <code>https://proxy.oyoclass.com/</code> to any URL that you want to fetch data from.</p>
-<pre><code>from urllib.request import urlopen
+<p>Some schools may have firewalls that block domains. For example, if your school blocks access to the "ip-api.com" domain, you won't get data returned like the above. In these cases, you can use our proxy by simply prepending <code>https://proxy.oyoclass.com/</code> to any URL that you want to fetch data from.</p>
+<pre><code class="python">from urllib.request import urlopen
 import json
 
 ip = input(&quot;Input the IP you want to query: &quot;)
@@ -252,8 +252,9 @@ location = json.loads(urlopen(url).read())
 print(&quot;Approx. Location:&quot;, location[&quot;city&quot;], location[&quot;region&quot;])
 </code></pre>
 
-<p>Another example, here is an API you can call to get the bitcoin price in USD: https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&amp;vs_currencies=usd, suppose your school blocked the "coingecho.com" domain, you can just prepend <code>https://proxy.oyoclass.com/</code> to it:</p>
-<pre><code>from urllib.request import urlopen
+<p>Here is another example. This is an API you can use to get the bitcoin price in USD: <code>https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&amp;vs_currencies=usd</code>. </p>
+<p>Suppose your school blocks the "coingecho.com" domain, you can just prepend <code>https://proxy.oyoclass.com/</code> to it:</p>
+<pre><code class="python">from urllib.request import urlopen
 import json
 url = &quot;https://proxy.oyoclass.com/https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&amp;vs_currencies=usd&quot;
 data = json.loads(urlopen(url).read())
