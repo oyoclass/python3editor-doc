@@ -54,7 +54,7 @@ for row in reader:
 
 #### Example 3) Calling API
 
-Most APIs provide [JSON](https://en.wikipedia.org/wiki/JSON) format data. Here we will use an IP-to-Location API to get the location information from a IP.
+Most APIs provide [JSON](https://en.wikipedia.org/wiki/JSON) format data. Here we will use an IP-to-Location API to get the location information from an IP address.
 
 ```python
 from urllib.request import urlopen
@@ -74,7 +74,7 @@ Approx. Location: Ronkonkoma NY
 
 #### Use OYOclass Proxy
 
-Some schools may have firewalls that block domains. For example, if your school blocks access to the "ip-api.com" domain, you won't get data returned like the above. In such case, you can use our proxy by simply prepending `https://proxy.oyoclass.com/` to any URL that you want to fetch data from.
+Some schools may have firewalls that block domains. For example, if your school blocks access to the "ip-api.com" domain, you won't get data returned like the above. In these cases, you can use our proxy by simply prepending `https://proxy.oyoclass.com/` to any URL that you want to fetch data from.
 
 ```python
 from urllib.request import urlopen
